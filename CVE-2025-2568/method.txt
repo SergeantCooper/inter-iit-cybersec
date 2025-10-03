@@ -1,5 +1,0 @@
-1. install wordpress as described here https://ubuntu.com/tutorials/install-and-configure-wordpress
-2. install vayu plugin ( version <= 1.2.2 )
-3. create any dummy record in the wordpress database inside the wp_options table ( here i created using INSERT INTO wp_options (option_name, option_value, autoload) VALUES ('test_value', 'original', 'no'); ).
-4. fetch the data using curl "http://<server-ip>/wp-json/vayu-blocks/v1/get-toggle-switch-values"
-5. update the using curl "http://1<server-ip>/wp-json/vayu-blocks/v1/save-toggle-switch" -H "Content-Type: application/json" -d '{"key":"<key>","value":"<value>"}' -> this will update any data ending with _value inside the wp_options table ( using test as key -> test_value).

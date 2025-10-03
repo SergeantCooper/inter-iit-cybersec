@@ -1,1 +1,1 @@
-# inter-iit-cybersec
+# Cybersecurity Prepathon challenges solution
